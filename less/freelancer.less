@@ -50,21 +50,21 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: white;
+    border-color: @brand-primary;
 }
 
 hr.star-light:after {
     background-color: @brand-success;
-    color: white;
+    color: @brand-primary
 }
 
 hr.star-primary {
-    border-color: @brand-primary;
+    border-color: @brand-success;
 }
 
 hr.star-primary:after {
-    background-color: white;
-    color: @brand-primary;
+    background-color: @brand-primary;
+    color: @brand-success;
 }
 
 .img-centered {
@@ -74,7 +74,7 @@ hr.star-primary:after {
 header {
 	text-align: center;
 	background: @brand-success;
-	color: white;
+	color: @brand-primary;
 	.container {
 		padding-top: 100px;
 		padding-bottom: 50px;
@@ -168,7 +168,7 @@ section {
 
 section.success {
 	background: @brand-success;
-	color: white;
+	color: @brand-primary;
 }
 
 @media(max-width:767px) {
@@ -181,6 +181,18 @@ section.success {
 }
 
 #portfolio {
+	background: @brand-primary;
+	
+	h2
+	{
+		color: @brand-success;
+	}
+	
+	ul
+	{
+		color: @brand-success;
+	}
+	
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
@@ -224,6 +236,18 @@ section.success {
     * {
         z-index: 2;
     }
+}
+
+#contact
+{
+	hr.star-primary {
+    border-color: @brand-primary;
+}
+
+hr.star-primary:after {
+    background-color: @brand-success;
+    color: @brand-primary;
+}
 }
 
 @media(min-width:767px) {
