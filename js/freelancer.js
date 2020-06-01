@@ -35,3 +35,13 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(function() {
+        
+  $('.list-group-item').on('click', function() {
+    $('.fa', this)
+      .toggleClass('fa-caret-right')
+      .toggleClass('fa-caret-down');
+  });
+
+});
